@@ -101,8 +101,8 @@ jobs:
         s="detect-water-body" t="${shatag}" yq -i eval '(.$graph[] | select (.id == env(s)) ).hints.DockerRequirement.dockerPull = env(t)' cwl-workflow/app-water-body-cloud-native.cwl
 
     - run: |
-        r=$( cat codemeta.json | jq -r ".codeRepository" ) yq -i eval '."s:codeRepository" = {"URL" : env(r)}' $cwl
-        v="${{needs.version.outputs.app-version}}" yq -i eval '."s:softwareVersion" = env(v)' $cwl
+        r=$( cat codemeta.json | jq -r ".codeRepository" ) yq -i eval '."s:codeRepository" = {"URL" : env(r)}' cwl-workflow/app-water-body-cloud-native.cwl
+        v="${{needs.version.outputs.app-version}}" yq -i eval '."s:softwareVersion" = env(v)' cwl-workflow/app-water-body-cloud-native.cwl
         n=$(cat codemeta.json | jq -r '(.author[0].givenName + " " + .author[0].familyName)') \
         e=$(cat codemeta.json | jq -r '.author[0].email') \
         a=$(cat codemeta.json | jq -r '.author[0].affiliation["name"]') \
