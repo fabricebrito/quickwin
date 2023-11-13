@@ -91,10 +91,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix: 
-        step: ["app-water-bodies-cloud-native", "app-water-body-cloud-native", "app-water-body"]
-
     steps:   
     - uses: actions/checkout@v2 
     - run: |
