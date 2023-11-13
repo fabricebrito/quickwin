@@ -110,7 +110,6 @@ jobs:
     - run: |
         mkdir downloads
         cp cwl-workflow/app-water-body-cloud-native.cwl downloads/app-water-body-cloud-native.${{needs.version.outputs.app-version}}.cwl
-        done
     - uses: actions/upload-artifact@v2
       with:
         name: application-package
