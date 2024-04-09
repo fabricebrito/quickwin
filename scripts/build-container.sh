@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export WORKSPACE=/data/work/eoap/quickwin
+export WORKSPACE=/workspace/quickwin
 
 command -v podman >/dev/null 2>&1 && { 
 

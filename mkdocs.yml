@@ -58,59 +58,33 @@ nav:
   #   - Introduction to CWL: prerequisites/cwl.md
   # - Earth Observation Application Package:
   #   - OGC Activities: app-package/ogc-context.md
-  # - Introducing the application:
-  #   - Water bodies detection: app/water-bodies-detection.md
-  #   - Application Steps:
-  #     - Crop: 
-  #       - Description: app/crop/app.md
-  #       - Running the step: python-env/crop.md
-  #     - Normalized Difference:
-  #       - Description: app/normalized-difference/app.md
-  #       - Running the step: python-env/norm-diff.md
-  #     - Otsu threshold:
-  #       - Description: app/otsu/app.md
-  #       - Running the step: python-env/otsu.md
-  #     - STAC Catalog:
-  #       - Description: app/stac/app.md
-  #       - Running the step: python-env/stac.md
-  # - Package the EO Application:
-  #   - Creating the containers: 
-  #     - Scope: containers/scope.md
-  #     - Test the containers:
-  #       - Crop: containers/crop.md
-  #       - Normalized difference: containers/norm-diff.md
-  #       - Ostu threshold: containers/otsu.md
-  #       - STAC Catalog: containers/stac.md
-  #   - Create CWL CommandLineTools:
-  #     - Scope: cwl-cli/scope.md
-  #     - Crop: cwl-cli/crop.md
-  #     - Normalized difference: cwl-cli/norm-diff.md
-  #     - Ostu threshold: cwl-cli/otsu.md
-  #     - STAC Catalog: cwl-cli/stac.md
-  #   - Create the CWL Workflows:
-  #     - Scope: cwl-workflow/scope.md
-  #     - Sentinel-2 Cloud native Workflow: cwl-workflow/cloud-native.md
-  #     - Staged Landsat-9 Workflow:
-  #       - Understanding stage-in/out: cwl-workflow/stage-in-out.md
-  #       - CWL CommandLineTool for stage-in: cwl-workflow/stage-in.md
-  #       - CWL CommandLineTool for stage-out: cwl-workflow/stage-out.md
-  #       - Processing a staged Landsat-9 acquisition: cwl-workflow/staged.md
-  #     - Sentinel-2 Workflow of Workflow: cwl-workflow/scatter-cloud-native.md
-  # - Release the EO Application:
-  #   - Scope: release/scope.md
-  #   - Continuous Integration: release/ci.md
-  # - Execution Scenarios:
-  #   - Scope: exec/scope.md
-  #   - Running on a local machine:
-  #     - Sentinel-2: cwl-workflow/exec-cloud-native.md
-  #     - Landsat-9: cwl-workflow/exec-stage-in.md
-  #   - Running CWL Workflow on Kubernetes: 
-  #     - Run the CWL Workflow with calrissian: kubernetes/calrissian.md 
-  # - FAIR Application Packages: fair/best-practice.md
-  # - Reference:
-  #   - OGC Application Package Best Practice: reference/ogc-ap-bp.md
-  #   - CWL CommandLineTool: reference/cwl-commandlinetool.md
-  #   - CWL Workflow: reference/cwl-workflow.md
-  #   - Tools: 
-  #     - cwltool: reference/cwltool.md
-  #     - calrissian: reference/calrissian.md
+  - Introducing the application:
+    - Water bodies detection: app/water-bodies-detection.md
+    - Application Steps:
+      - Water bodies detection: 
+        - Description: app/water_bodies/app.md
+        - Running the step: python-env/water_bodies.md
+  - Package the EO Application:
+    - Creating the containers: 
+      - Scope: containers/scope.md
+      - Build and test the container:
+        - Water bodies detection: containers/water_bodies.md
+    - Create CWL CommandLineTools:
+      - Scope: cwl-cli/scope.md
+      - Water bodies detection: cwl-cli/water_bodies.md
+    - Create the CWL Workflows:
+      - Scope: cwl-workflow/scope.md
+      - Sentinel-2 Cloud native Workflow: cwl-workflow/cloud-native.md
+  - Release the EO Application:
+    - Scope: release/scope.md
+    - Continuous Integration: release/ci.md
+  - Execution Scenarios:
+    - Scope: exec/scope.md
+    - Running on a local machine:
+      - Sentinel-2: exec/cloud-native.md
+  - Reference:
+    - OGC Application Package Best Practice: reference/ogc-ap-bp.md
+    - CWL CommandLineTool: reference/cwl-commandlinetool.md
+    - CWL Workflow: reference/cwl-workflow.md
+    - Tools: 
+      - cwltool: reference/cwltool.md
