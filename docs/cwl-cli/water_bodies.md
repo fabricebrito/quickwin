@@ -11,7 +11,7 @@ This step has a dedicated lab available at `/workspace/quickwin/practice-labs/Co
 
 The CWL document below shows the water bodies detection Python command line tool step wrapped as a CWL CommandLineTool:
 
-```yaml linenums="1" hl_lines="9-12 49-53" title="cwl-cli/crop.cwl"
+```yaml linenums="1" hl_lines="9-12 49-53" title="cwl-cli/detect-water-body"
 --8<--
 cwl-cli/detect-water-body.cwl
 --8<--
@@ -58,12 +58,16 @@ scripts/cwl-cli.sh
 The folder `/workspace/quickwin/runs` contains: 
 
 ```
-(base) jovyan@coder-mrossi:~/runs$ tree .
-.
-├── crop_green.tif
-└── crop_nir.tif
+(base) jovyan@jupyter-fbrito--training:~/quickwin$ tree runs
+runs
+└── poz7ftyy
+    ├── S2B_10TFK_20210713_0_L2A
+    │   ├── S2B_10TFK_20210713_0_L2A.json
+    │   └── otsu.tif
+    ├── catalog.json
+    └── otsu.tif
 
-0 directories, 2 files
+2 directories, 4 files
 ```
 
 ### Extra 

@@ -29,3 +29,28 @@ The CWL Workflow is shown below and the lines highlighted chain the water bodies
 cwl-workflow/app-water-body-cloud-native.cwl
 --8<--
 ```
+
+To run this CWL document, one does:
+
+```console hl_lines="9-12 49-53" title="terminal"
+--8<--
+scripts/cwl-workflow.sh
+--8<--
+```
+
+### Expected outcome
+
+The folder `/workspace/quickwin/runs` contains: 
+
+```
+(base) jovyan@jupyter-fbrito--training:~/quickwin$ tree runs
+runs
+└── jtv7v57e
+    ├── S2B_10TFK_20210713_0_L2A
+    │   ├── S2B_10TFK_20210713_0_L2A.json
+    │   └── otsu.tif
+    ├── catalog.json
+    └── otsu.tif
+
+2 directories, 4 files
+```

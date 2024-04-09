@@ -37,13 +37,15 @@ scripts/exec-app-water-body-cloud-native.sh
 The folder `/workspace/quickwin/runs` contains: 
 
 ``` hl_lines="3"
-(base) jovyan@jupyter-fbrito--training:~/quickwin$ tree runs/6tt6yy9p/
-runs/6tt6yy9p/
-├── S2B_10TFK_20210713_0_L2A
-│   ├── S2B_10TFK_20210713_0_L2A.json
-│   └── otsu.tif
-├── catalog.json
-└── otsu.tif
+(base) jovyan@jupyter-fbrito--training:~/quickwin$ tree runs
+runs
+├── app-water-body-cloud-native.1.0.0.cwl
+└── fc2e52v2
+    ├── S2B_10TFK_20210713_0_L2A
+    │   ├── S2B_10TFK_20210713_0_L2A.json
+    │   └── otsu.tif
+    ├── catalog.json
+    └── otsu.tif
 
-1 directory, 4 files
+2 directories, 5 files
 ```

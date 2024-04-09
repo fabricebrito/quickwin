@@ -56,3 +56,4 @@ $graph:
 ```
 
 We propose the Workflow `app-water-body-cloud-native.cwl` reading a STAC Item as input and orchestrating the Python command line tool.
+
