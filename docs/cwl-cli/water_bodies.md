@@ -34,7 +34,7 @@ Let's break down the key components of this CWL document:
     * `aoi`: A string representing the area of interest (AOI) as a bounding box, bound to the `--aoi` argument.
     * `epsg`: A string representing the EPSG code for the coordinate system, bound to the `--epsg` argument.
     * `band`: An array of strings representing the name of the bands to be extracted, bound to the `--band` argument.
-* `outputs`: Specifies the tool's output. It defines an output parameter named `cropped`, which is of type `File`. The outputBinding section specifies that the tool is expected to produce one or more TIFF files (glob: '*.tif') as output.
+* `outputs`: Specifies the tool's output. It defines an output parameter named `water-body`, which is of type `Directory`. The outputBinding section specifies that the tool is expected to produce one or more files (glob: .) as output.
 
 ### Steps
 

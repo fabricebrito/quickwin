@@ -87,8 +87,8 @@ def get_asset(item, common_name):
 
 
 @click.command(
-    short_help="Crop",
-    help="Crops a STAC Item asset defined with its common band name",
+    short_help="Water bodies detection",
+    help="Detects water bodies using the Normalized Difference Water Index (NDWI) and Otsu thresholding.",
 )
 @click.option(
     "--input-item",

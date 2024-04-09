@@ -11,9 +11,9 @@ This step has a dedicated lab available at `/workspace/quickwin/practice-labs/Co
 
 The water bodies detection has a recipe to build the container image.
 
-The `crop` step container image recipe is:
+The `detect_water_bodies` step container image recipe is:
 
-```dockerfile linenums="1" title="crop/Dockerfile"
+```dockerfile linenums="1" title="detect-water-body/Dockerfile"
 --8<--
 water-bodies/command-line-tools/detect-water-body/Dockerfile
 --8<--
@@ -42,7 +42,7 @@ localhost/detect-water-body  latest      534f3f10c06e  11 minutes ago  530 MB
 
 We'll use `podman` container engine (`docker` is also fine).
 
-The command to run the `crop` step in the container is:
+The command to run the `detect-water-body` step in the container is:
 
 ```bash linenums="1" hl_lines="4-5 11 15-22"
 --8<--
