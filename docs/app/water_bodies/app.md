@@ -69,7 +69,8 @@ The script usage is:
 ```
 Usage: app.py [OPTIONS]
 
-  Crops a STAC Item asset defined with its common band name
+  Detects water bodies using the Normalized Difference Water Index (NDWI) and
+  Otsu thresholding.
 
 Options:
   --input-item TEXT  STAC Item URL or staged STAC catalog  [required]
