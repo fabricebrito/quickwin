@@ -35,7 +35,7 @@ The local container registry lists the built images:
 
 ```
 (base) jovyan@coder-mrossi:~/runs$ podman images | grep localhost
-localhost/detect-water-body                                     latest      1e8ca97d1619  About a minute ago  288 MB
+localhost/detect-water-body  latest      534f3f10c06e  11 minutes ago  530 MB
 ```
 
 ### How to run a step in a container
@@ -71,14 +71,15 @@ Let's break down what this command does:
 
 ### Expected outcome
 
-The folder `/workspace/runs` contains: 
+The folder `/workspace/quickwin/runs` contains: 
 
 ```
-(base) jovyan@coder-mrossi:~/runs$ tree .
-.
-├── crop_green.tif
-└── crop_nir.tif
-
-0 directories, 2 files
+(base) jovyan@coder-mrossi:~/quickwin $ tree runs/6tt6yy9p/
+runs/6tt6yy9p/
+├── S2B_10TFK_20210713_0_L2A
+│   ├── S2B_10TFK_20210713_0_L2A.json
+│   └── otsu.tif
+├── catalog.json
+└── otsu.tif
 ```
 

@@ -49,13 +49,16 @@ scripts/deactivate.sh
 
 ### Expected outcome
 
-- [ ] The folder `/workspace/quickwin/runs` contains: 
+The folder `/workspace/quickwin/runs` contains: 
 
 ```
-(base) jovyan@coder-mrossi:~/runs$ tree .
+(base) jovyan@jupyter-mrossi--training:~/quickwin/runs$ tree .
 .
-├── crop_green.tif
-└── crop_nir.tif
+├── S2B_10TFK_20210713_0_L2A
+│   ├── S2B_10TFK_20210713_0_L2A.json
+│   └── otsu.tif
+├── catalog.json
+└── otsu.tif
 
-0 directories, 2 files
+1 directory, 4 files
 ```

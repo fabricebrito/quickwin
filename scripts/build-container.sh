@@ -1,5 +1,3 @@
-#!/bin/bash
-
 export WORKSPACE=/workspace/quickwin
 
 command -v podman >/dev/null 2>&1 && { 

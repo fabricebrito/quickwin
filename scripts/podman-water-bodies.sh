@@ -9,7 +9,7 @@ podman run \
     --rm \
     --env=HOME=/runs \
     --env=PYTHONPATH=/app \
-    localhost/crop:latest \
+    localhost/detect-water-body:latest \
     python \
     -m \
     app \
@@ -17,6 +17,8 @@ podman run \
     "-121.399,39.834,-120.74,40.472" \
     --band \
     green \
+    --band \
+    nir \
     --epsg \
     "EPSG:4326" \
     --input-item \
