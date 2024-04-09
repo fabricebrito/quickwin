@@ -28,7 +28,6 @@ def crop(asset: pystac.Asset, bbox, epsg):
         _type_: _description_
     """
     with rasterio.open(asset.get_absolute_href()) as src:
-
         transformer = Transformer.from_crs(epsg, src.crs, always_xy=True)
 
         minx, miny = transformer.transform(bbox[0], bbox[1])
@@ -116,7 +115,6 @@ def get_asset(item, common_name):
     multiple=True,
 )
 def main(item_url, aoi, bands, epsg):
-
     if os.path.isdir(item_url):
         catalog = pystac.read_file(os.path.join(item_url, "catalog.json"))
         item = next(catalog.get_items())
