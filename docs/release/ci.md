@@ -52,3 +52,9 @@ Below an example of a GitHub CI configuration implementing the scenario:
 .github/workflows/build.yaml
 --8<--
 ```
+
+### Artefacts
+
+The released application package is published here: https://github.com/eoap/quickwin/releases/tag/1.0.0
+
+The container is available at: https://github.com/eoap/quickwin/pkgs/container/quickwin%2Fdetect-water-body
