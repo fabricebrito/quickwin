@@ -1,3 +1,7 @@
 env_water_bodies
 __pycache__
 runs
+catalog.json
+S2A*
+S2B*
+*.tif
