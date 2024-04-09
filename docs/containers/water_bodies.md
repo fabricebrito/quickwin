@@ -74,12 +74,14 @@ Let's break down what this command does:
 The folder `/workspace/quickwin/runs` contains: 
 
 ```
-(base) jovyan@coder-mrossi:~/quickwin $ tree runs/6tt6yy9p/
-runs/6tt6yy9p/
+(base) jovyan@jupyter-mrossi--training:~/quickwin$ tree runs/
+runs/
 ├── S2B_10TFK_20210713_0_L2A
 │   ├── S2B_10TFK_20210713_0_L2A.json
 │   └── otsu.tif
 ├── catalog.json
 └── otsu.tif
+
+1 directory, 4 files
 ```
 
