@@ -62,11 +62,12 @@ Let's break down what this command does:
 * `--rm`: This flag tells podman to remove the container after it has finished running.
 * `--env=HOME=/runs`: Sets the `HOME` environment variable inside the container to `/runs`.
 * `--env=PYTHONPATH=/app`: Sets the `PYTHONPATH` environment variable inside the container to `/app`.
-* `localhost/crop:latest`: This is the name of the container image that you want to run. It's pulling the image from the local container registry with the name "crop" and the "latest" tag.
-* `python -m app`: This is the command to run inside the container. It runs a Python module named "app."
+* `localhost/detect-water-body:latest`: This is the name of the container image that you want to run. It's pulling the image from the local container registry with the name "detect-water-body" and the "latest" tag.
+* `python -m app`: This is the command to run inside the container. It runs a Python module named "app".
 * `--aoi "-121.399,39.834,-120.74,40.472"`: This provides command-line arguments to the Python module. It specifies the area of interest (AOI) as a bounding box.
 * `--band green`: Specifies the band to be extracted from the Sentinel-2 acquisition. In this case, it's the "green" band.
-* `--epsg "EPSG:4326"``: Specifies the EPSG code, which defines the coordinate system used for the `aoi` command-line argument.
+* `--band nir`: Specifies the band to be extracted from the Sentinel-2 acquisition. In this case, it's the "nir" band.
+* `--epsg "EPSG:4326"`: Specifies the EPSG code, which defines the coordinate system used for the `aoi` command-line argument.
 * `--input-item ...`: Specifies the input STAC item URL. This particular URL points to a Sentinel-2 image hosted on AWS Earth Search.
 
 ### Expected outcome
