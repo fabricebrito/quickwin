@@ -3,16 +3,14 @@ cwlVersion: v1.0
 class: CommandLineTool
 id: detect-water-body
 requirements:
-    InlineJavascriptRequirement: {}
     EnvVarRequirement:
       envDef:
         PYTHONPATH: /app
     ResourceRequirement:
       coresMax: 1
       ramMax: 512
-hints:
-  DockerRequirement:
-    dockerPull: localhost/detect-water-body:latest
+    DockerRequirement:
+      dockerPull: localhost/detect-water-body:latest  
 baseCommand: ["python", "-m", "app"]
 arguments: []
 inputs:
