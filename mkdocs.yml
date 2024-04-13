@@ -53,11 +53,9 @@ extra_javascript:
 
 nav:
   - Introduction: 'index.md'
-  # - Prerequisites: 
-  #   - Introduction to YAML: prerequisites/yaml.md
-  #   - Introduction to CWL: prerequisites/cwl.md
-  # - Earth Observation Application Package:
-  #   - OGC Activities: app-package/ogc-context.md
+  - Prerequisites: 
+    - Introduction to YAML: prerequisites/yaml.md
+    - Introduction to CWL: prerequisites/cwl.md
   - Introducing the application:
     - Water bodies detection: app/water-bodies-detection.md
     - Application Steps:
@@ -74,14 +72,14 @@ nav:
       - Water bodies detection: cwl-cli/water_bodies.md
     - Create the CWL Workflows:
       - Scope: cwl-workflow/scope.md
-      - Sentinel-2 Cloud native Workflow: cwl-workflow/cloud-native.md
+      - Water bodies detection: cwl-workflow/cloud-native.md
   - Release the EO Application:
     - Scope: release/scope.md
     - Continuous Integration: release/ci.md
   - Execution Scenarios:
     - Scope: exec/scope.md
     - Running on a local machine:
-      - Sentinel-2: exec/cloud-native.md
+      - Sentinel-2: exec/cloud-native.md 
   - Reference:
     - OGC Application Package Best Practice: reference/ogc-ap-bp.md
     - CWL CommandLineTool: reference/cwl-commandlinetool.md
