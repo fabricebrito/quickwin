@@ -4,7 +4,7 @@ This repository supports "**Getting started on Earth Observation Application Pac
 
 This tutorial event is designed for developers, scientists, and EO enthusiasts who want to get started and increase their skills in creating and sharing EO Application Packages. Whether you are new to CWL or already have some experience, this event will provide valuable insights and practical knowledge to boost your expertise.
 
-During the event, you will learn:
+With this tutorial, developers will learn:
 
 * The fundamentals of EO Application Packages and their role in the EO domain.
 * How to leverage CWL to describe, package, and share workflows.
@@ -15,6 +15,8 @@ During the event, you will learn:
 When developers package an EO Application, they are in fact packaging their own software, written in a specific programming language, as a containerized application (or a set of containerized applications), to be described as an EO Application Package using the CWL as described in the OGC proposed best practices.
 
 This tutorial will guide developers through step-by-step examples, demonstrating the process of creating EO Application Packages using CWL with a simple EO application for water bodies detection using the Normalised Difference Water Index (NDWI). 
+
+## Implementation
 
 To facilitate this process, developers are guided through the tutorial using interactive Jupyter Notebooks to test the Application Package across various execution scenarios:
 
