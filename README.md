@@ -2,9 +2,7 @@
 
 This repository supports "**Getting started on Earth Observation Application Packaging with CWL**" tutorial events, where participants are introduced to the world of Eearth Observation (EO) Application Packages and explore how to effectively package, share, and execute EO workflows using the Common Workflow Language (CWL) standard.
 
-This tutorial event is designed for developers, scientists, and EO enthusiasts who want to get started and increase their skills in creating and sharing EO Application Packages. 
-
-Whether you are new to CWL or already have some experience, this event will provide valuable insights and practical knowledge to boost your expertise.
+This tutorial event is designed for developers, scientists, and EO enthusiasts who want to get started and increase their skills in creating and sharing EO Application Packages. Whether you are new to CWL or already have some experience, this event will provide valuable insights and practical knowledge to boost your expertise.
 
 During the event, you will learn:
 
@@ -16,14 +14,14 @@ During the event, you will learn:
 
 When developers package an EO Application, they are in fact packaging their own software, written in a specific programming language, as a containerized application (or a set of containerized applications), to be described as an EO Application Package using the CWL as described in the OGC proposed best practices.
 
-To achieve this, developers follow the steps described below.
+This tutorial will guide developers through step-by-step examples, demonstrating the process of creating EO Application Packages using CWL with a simple EO application for water bodies detection using the Normalised Difference Water Index (NDWI). 
 
-* Prepare one or more container images containing the execution dependencies of the software.
-* Prepare the CWL *CommandLineTool* document(s) wrapping the command line tool available in container(s).
-* Prepare the CWL *Workflow* orchestrating CWL *CommandLineTool* document(s) wrapping the *CommandLineTool* available container(s).
-* Test the application package in one or more execution scenarios.
+To facilitate this process, developers are guided through the tutorial using interactive Jupyter Notebooks to test the Application Package across various execution scenarios:
 
-This tutorial will guide you through step-by-step tutorials, demonstrating the process of creating EO Application Packages using CWL with a simple EO application for water bodies detection using the Normalised Difference Water Index (NDWI). 
+1) **Application**: it describes a simple EO application for water bodies detection using the Normalised Difference Water Index (NDWI). The application is written in Python and invoked with `CliRunner` from within the Notebook.
+2) **Container**: it creates the container image containing the execution dependencies of the application developed in the previous Notebook, and it executes it in `bash` using `podman`. 
+3) **CommandLineTool**: it prepares the CWL *CommandLineTool* document(s) wrapping the command line tool available in container(s).
+4) **Workflow**: it prepares the CWL *Workflow* that orchestrates the *CommandLineTool* document(s) wrapping the command line tool available container(s).
 
 The webpage of the documentation is https://eoap.github.io/quickwin. 
 

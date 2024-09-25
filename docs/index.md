@@ -20,7 +20,7 @@ To achieve this, developers follow the steps described below.
 
 * Prepare one or more container images containing the execution dependencies of the software.
 * Prepare the CWL *CommandLineTool* document(s) wrapping the command line tool available in container(s).
-* Prepare the CWL *Workflow* orchestrating CWL *CommandLineTool* document(s) wrapping the *CommandLineTool* available container(s).
+* Prepare the CWL *Workflow* orchestrating CWL *CommandLineTool* document(s) wrapping the command line tool available container(s).
 * Test the application package in one or more execution scenarios.
 
 This tutorial will guide you through step-by-step tutorials, demonstrating the process of creating EO Application Packages using CWL with a simple EO application for water bodies detection using the Normalised Difference Water Index (NDWI). 
