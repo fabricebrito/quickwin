@@ -21,7 +21,7 @@ This tutorial will guide developers through step-by-step examples, demonstrating
 To facilitate this process, developers are guided through the tutorial using interactive Jupyter Notebooks to test the Application Package across various execution scenarios:
 
 1) **Application**: it describes a simple EO application for water bodies detection using the Normalised Difference Water Index (NDWI). The application is written in Python and invoked with `CliRunner` from within the Notebook.
-2) **Container**: it creates the container image containing the execution dependencies of the application developed in the previous Notebook, and it executes it in `bash` using `podman`. 
+2) **Container**: it creates the container image containing the execution dependencies of the application developed in the previous Notebook, and it executes it in `bash` using `podman`.
 3) **CWL-CommandLineTool**: it prepares the CWL *CommandLineTool* document(s) wrapping the command line tool available in container(s).
 4) **CWL-Workflow**: it prepares the CWL *Workflow* that orchestrates the *CommandLineTool* document(s) wrapping the command line tool available container(s).
 
