@@ -13,6 +13,8 @@ on:
     - docs/**
     - cwl-workflow/*.cwl
     - codemeta.json
+    - practice-labs/**
+    
 jobs:
   validate:
     runs-on: ubuntu-latest
