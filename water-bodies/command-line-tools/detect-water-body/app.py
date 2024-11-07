@@ -181,7 +181,7 @@ def main(item_url, aoi, bands, epsg):
         asset_href=os.path.basename(water_body),
         asset_name="data",
         with_proj=True,
-        with_raster=False,
+        with_raster=True,
     )
 
     cat.add_items([out_item])

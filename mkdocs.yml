@@ -53,6 +53,7 @@ extra_javascript:
 
 nav:
   - Introduction: 'index.md'
+  - Installation: 'installation.md'
   - Prerequisites: 
     - Introduction to YAML: prerequisites/yaml.md
     - Introduction to CWL: prerequisites/cwl.md
