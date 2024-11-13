@@ -54,7 +54,7 @@ jobs:
     - run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
     - name: build & push image
       run: |
-        IMAGE_ID=ghcr.io/eoap/quickwin/detect-water-body
+        IMAGE_ID=ghcr.io/fabricebrito/quickwin/detect-water-body
         docker build water-bodies/command-line-tools/detect-water-body --file water-bodies/command-line-tools/detect-water-body/Dockerfile --tag detect-water-body
         docker tag detect-water-body $IMAGE_ID:${{needs.version.outputs.app-version}}
         docker push $IMAGE_ID:${{needs.version.outputs.app-version}}
@@ -97,7 +97,7 @@ jobs:
     - uses: actions/checkout@v2 
     - run: |
         
-        tag="ghcr.io/eoap/quickwin/detect-water-body:${{needs.version.outputs.app-version}}"
+        tag="ghcr.io/fabricebrito/quickwin/detect-water-body:${{needs.version.outputs.app-version}}"
         docker pull ${tag}
         shatag=$( docker inspect ${tag} | yq -r '.[0]["RepoDigests"][0]' )
         s="detect-water-body" t="${shatag}" yq -i eval '(.$graph[] | select (.id == env(s)) ).hints.DockerRequirement.dockerPull = env(t)' cwl-workflow/app-water-body-cloud-native.cwl
