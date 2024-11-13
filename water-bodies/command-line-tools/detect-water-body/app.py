@@ -13,6 +13,7 @@ import shutil
 import rio_stac
 import numpy as np
 
+print("hello")
 np.seterr(divide="ignore", invalid="ignore")
 
 
